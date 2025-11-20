@@ -101,7 +101,7 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app-wrapper">
         <ScrollToTop />
         <Navbar 
