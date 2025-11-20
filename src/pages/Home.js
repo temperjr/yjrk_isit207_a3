@@ -2,6 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const featuresIcons = [
+  process.env.PUBLIC_URL + '/assets/icon_folder/adopt.png',
+  process.env.PUBLIC_URL + '/assets/icon_folder/release.png',
+  process.env.PUBLIC_URL + '/assets/icon_folder/community.png'
+];
+
 const heroImages = [
   process.env.PUBLIC_URL + '/assets/home_section_images/heroimage1.jpg',
   process.env.PUBLIC_URL + '/assets/home_section_images/heroimage2.jpg',
@@ -76,17 +82,17 @@ const Home = ({ onReleaseClick }) => {
 
       <div className="features-grid">
         <div className="feature-card clickable" onClick={handleAdoptClick}>
-          <img src='/assets/icon_folder/adopt.png'/>
+          <img src={featuresIcons[0]} />
           <h3>Adopt a Pet</h3>
           <p>Find your perfect companion from our loving pets waiting for homes</p>
         </div>
         <div className="feature-card clickable" onClick={onReleaseClick}>
-          <img src='/assets/icon_folder/release.png'/>
+          <img src={featuresIcons[1]}/>
           <h3>Release a Pet</h3>
           <p>Help us care for pets that need a new home</p>
         </div>
         <div className="feature-card clickable" onClick={handleMemberClick}>
-          <img src='/assets/icon_folder/community.png'/>
+          <img src={featuresIcons[2]}/>
           <h3>Become a Member</h3>
           <p>Support our mission and stay updated on our pets</p>
         </div>

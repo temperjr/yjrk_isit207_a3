@@ -57,12 +57,12 @@ const Pets = ({ isLoggedIn, currentUser, onAdopt }) => {
 
   // Initial hardcoded pets
   const initialPets = [
-    { id: 1, name: 'Sakura', type: 'Dog', breed: 'Shiba Inu', age: '3 years', adoptionPrice: '$350', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Friendly and energetic', image: '/assets/Sakura.jpeg' },
-    { id: 2, name: 'YuWen', type: 'Dog', breed: 'Local', age: '2 years', adoptionPrice: '$250', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Calm and affectionate', image: '/assets/YuWen.jpeg' },
-    { id: 3, name: 'Kobbie', type: 'Dog', breed: 'Singapore Special', age: '4 years', adoptionPrice: '$300', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Playful and loyal', image: '/assets/Kobbie.jpeg' },
-    { id: 4, name: 'Bel', type: 'Dog', breed: 'Shetland Sheepdog', age: '7 years', adoptionPrice: '$200', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Curious and intelligent', image: '/assets/Bel.jpg' },
-    { id: 5, name: 'Monte', type: 'Dog', breed: 'Cross-Breed', age: '5 years', adoptionPrice: '$100', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Protective and loving', image: '/assets/Monte.jpeg' },
-    { id: 6, name: 'Bruno', type: 'Dog', breed: 'Poodle', age: '3 years', adoptionPrice: '$300', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Gentle and easygoing', image: '/assets/Bruno.jpeg' }
+    { id: 1, name: 'Sakura', type: 'Dog', breed: 'Shiba Inu', age: '3 years', adoptionPrice: '$350', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Friendly and energetic', image: process.env.PUBLIC_URL + '/assets/Sakura.jpeg' },
+    { id: 2, name: 'YuWen', type: 'Dog', breed: 'Local', age: '2 years', adoptionPrice: '$250', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Calm and affectionate', image: process.env.PUBLIC_URL + '/assets/YuWen.jpeg' },
+    { id: 3, name: 'Kobbie', type: 'Dog', breed: 'Singapore Special', age: '4 years', adoptionPrice: '$300', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Playful and loyal', image: process.env.PUBLIC_URL + '/assets/Kobbie.jpeg' },
+    { id: 4, name: 'Bel', type: 'Dog', breed: 'Shetland Sheepdog', age: '7 years', adoptionPrice: '$200', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Curious and intelligent', image: process.env.PUBLIC_URL + '/assets/Bel.jpg' },
+    { id: 5, name: 'Monte', type: 'Dog', breed: 'Cross-Breed', age: '5 years', adoptionPrice: '$100', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Protective and loving', image: process.env.PUBLIC_URL + '/assets/Monte.jpeg' },
+    { id: 6, name: 'Bruno', type: 'Dog', breed: 'Poodle', age: '3 years', adoptionPrice: '$300', isVaccinated: getRandomBoolean(), isSterilised: getRandomBoolean(), hasMicrochip: getRandomBoolean(), description: 'Gentle and easygoing', image: process.env.PUBLIC_URL + '/assets/Bruno.jpeg' }
   ];
 
   const catNames = ['Whiskers', 'Shadow', 'Simba', 'Oreo', 'Mittens', 'Smokey'];
