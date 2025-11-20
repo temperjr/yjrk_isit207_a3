@@ -3,35 +3,35 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const heroImages = [
-  '/assets/home_section_images/heroimage1.jpg',
-  '/assets/home_section_images/heroimage2.jpg',
-  '/assets/home_section_images/heroimage3.jpg'
+  process.env.PUBLIC_URL + '/assets/home_section_images/heroimage1.jpg',
+  process.env.PUBLIC_URL + '/assets/home_section_images/heroimage2.jpg',
+  process.env.PUBLIC_URL + '/assets/home_section_images/heroimage3.jpg'
 ];
 
 const facilitiesData = [
   {
     title: 'Modern Shelter',
-    image: '/assets/home_section_images/ModernShelter.jpg'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/ModernShelter.jpg'
   },
   {
     title: 'On-Site Veterinary Clinic',
-    image: '/assets/home_section_images/vetClinic.jpg'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/vetClinic.jpg'
   },
   {
     title: 'Indoor & Outdoor Play Areas',
-    image: '/assets/home_section_images/playArea.jpg'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/playArea.jpg'
   },
   {
     title: 'Professional Grooming',
-    image: '/assets/home_section_images/professionalGrooming.png'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/professionalGrooming.png'
   },
   {
     title: 'Training & Socialization',
-    image: '/assets/home_section_images/Training&Socialization.jpg'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/Training&Socialization.jpg'
   },
   {
     title: 'Detailed Food Preparation',
-    image: '/assets/home_section_images/foodPrep.jpeg'
+    image: process.env.PUBLIC_URL + '/assets/home_section_images/foodPrep.jpeg'
   }
 ];
 
